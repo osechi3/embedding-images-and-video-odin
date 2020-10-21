@@ -7,12 +7,42 @@
     <title>Embedding Images and Video</title>
   </head>
   <body>
-    <header class="header"></header>
-    <section class="main-section">
+    <header class="header">
+      <nav class="header__navigation">
+        <a class="header__menu-btn" href="#">
+          <i class="header__menu-icon" class=" fas fa-bars"></i>
+        </a>
+        <a class="header__main-page-btn" href="#">
+          <img class="header__main-page-icon" src="/images/youtube-logo.svg" alt="Site's logo redirecting to the main page">
+          YouTube<sup>RU</sup>
+        </a>
+      </nav>
+      <section class="header__search-section">
+        <input class="header__search-input" type="text">
+        <button class="header__search-btn" type="button">
+          <i class="header__search-icon fas fa-search"></i>
+        </button>
+      </section>
+      <section class="header__actions-section">
+        <a class="header__create-video-btn" href="#">
+          <i class="header__create-video-icon fas fa-video"></i>
+        </a>
+        <a class="header__apps-btn" href="#">
+          <i class="header__apps-icon fas fa-th"></i>
+        </a>
+        <a class="header__notifications-btn" href="#">
+          <i class="header__notifications-icon fas fa-bell"></i>
+        </a>
+        <a class="header__user-menu" href="">
+          <img class="header__user-img" src="/images/current-user.webp" alt="Current user's profile picture">
+        </a>
+      </section>
+    </header>
+    <main class="main-section">
       <section class="video-section"></section>
       <section class="channel-info-section"></section>
       <section class="comments-section"></section>
-    </section>
+    </main>
     <aside class="side-section">
       <section class="related-videos"></section>
     </aside>
