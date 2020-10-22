@@ -177,7 +177,7 @@ body {
 }
 
 .video-section__btn {
-  margin: 0 10px;
+  margin-left: 15px;
 
   color: var(--main-text-gray);
   font-size: 16px;
