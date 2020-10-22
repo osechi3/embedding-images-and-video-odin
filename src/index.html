@@ -100,9 +100,38 @@
         <section class="comments-section__new-comment-section">
           <picture>
             <source srcset="/images/current-user.webp" type="image/webp">
-              <img class="comments-section__user-img" src="/images/current-user.jpg" alt="">
+              <img class="comments-section__user-img" src="/images/current-user.jpg" alt="Current user's profile picture">
           </picture>
           <input class="comments-section__comment-input" type="text" placeholder="Add a public comment...">
+        </section>
+        <section class="comments-section__other-comments-section">
+          <article class="comment">
+            <header class="comment__header">
+              <picture class="comment__user-img-container">
+                <source srcset="/images/andrew-turner.webp" type="image/webp">
+                <img class="comment__user-img" src="/images/andrew-turner.jpg" alt="User's profile picture">
+              </picture>
+              <h3 class="comment__user-name">andrew turner</h3>
+              <p class="comment__date">1 month ago</p>
+            </header>
+            <p class="comment__text">me when sunday</p>
+            <section class="comment__actions-section">
+              <a class="comment__like-btn comment__btn" href="#" title="Like" role="button">
+                <p class="comment__like-amount"><i class="comment__like-icon comment__icon fas fa-thumbs-up"></i>17</p>
+              </a>
+              <a class="comment__dislike-btn comment__btn" href="#" title="Dislike" role="button">
+                <i class="comment__dislike-icon comment__icon fas fa-thumbs-down"></i>
+              </a>
+              <a class="comment__reply-btn comment__btn" href="#" role="button">
+                REPLY
+              </a>
+            </section>
+            <section class="comment__replies-section">
+              <a class="comment__replies-btn" href="#" role="button">
+                <i class="comment__replies-icon fas fa-sort-down"></i>View 3 replies
+              </a>
+            </section>
+          </article>
         </section>
       </section>
     </main>

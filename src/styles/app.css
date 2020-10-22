@@ -25,6 +25,7 @@ body {
 
 .header {
   position: fixed;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -314,6 +315,88 @@ body {
   background-color: #171717;
   border: none;
   border-bottom: 1px solid #525252;
+}
+
+.comment {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px 0;
+  padding-left: 45px;
+}
+
+.comment__header {
+  display: flex;
+}
+
+.comment__user-img-container {
+  position: absolute;
+  left: 0;
+}
+
+.comment__user-img {
+  border: 1px transparent;
+  border-radius: 50%;
+}
+
+.comment__user-name {
+  align-self: flex-start;
+
+  margin: 0;
+  margin-left: 17px;
+
+  font-size: 15px;
+}
+
+.comment__date {
+  margin: 0;
+  margin-left: 5px;
+
+  color: var(--main-text-gray);
+  font-size: 15px;
+}
+
+.comment__text {
+  margin: 15px 0 3px 17px;
+}
+
+.comment__actions-section {
+  display: flex;
+  align-items: center;
+
+  margin-left: 17px;
+}
+
+.comment__btn {
+  color: var(--main-text-gray);
+}
+
+.comment__icon {
+  font-size: 18px;
+}
+
+.comment__like-icon {
+  margin-right: 10px;
+}
+
+.comment__dislike-icon {
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.comment__replies-section {
+  margin-left: 17px;
+}
+
+.comment__replies-btn {
+  color: #288bff;
+  font-size: 17px;
+}
+
+.comment__replies-icon {
+  margin-right: 15px;
 }
 
 .side-section {
