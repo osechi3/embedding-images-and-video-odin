@@ -32,7 +32,7 @@
           <i class="header__notifications-icon header__icon fas fa-bell"></i>
         </a>
         <a class="header__user-menu header__action-btn" href="" role="button">
-          <picture class="header__user-img">
+          <picture>
             <source srcset="/images/current-user.webp" type="image/webp">
             <img class="header__user-img" src="/images/current-user.jpg" alt="Current user's profile picture">
           </picture>
@@ -69,9 +69,27 @@
             </a>
           </section>
         </header>
-        <hr class="section-break">
       </section>
-      <section class="channel-info-section"></section>
+      <hr class="section-break">
+      <section class="channel-info-section">
+        <header class="channel-info-section__header">
+          <a class="channel-info-section__channel-btn" href="#" role="button">
+            <picture>
+              <source srcset="/images/current-channel.webp">
+                <img class="channel-info-section__channel-image" src="/images/current-channel.jpg" alt="Two letters, 'F' and 'T', standing next to each other.">
+            </picture>
+          </a>
+          <section class="channel-info-section__channel-main-info">
+            <a class="channel-info-section__channel-btn" href="#" role="button">
+              <h2 class="channel-info-section__channel-name" title="FUNNY TOONS">FUNNY TOONS<i class="channel-info-section__verified-icon fas fa-check-circle" title="Verified"></i></h2>
+            </a>
+            <p class="channel-info-section__channel-subscribers">3.52M subscribers</p>
+          </section>
+        </header>
+        <button class="channel-info-section__subscribe-btn" type="button">SUBSCRIBE</button>
+        <p class="channel-info-section__description">Dancing cats. It's fun.</p>
+      </section>
+      <hr class="section-break">
       <section class="comments-section"></section>
     </main>
     <aside class="side-section">
