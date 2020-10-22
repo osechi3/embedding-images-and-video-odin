@@ -75,7 +75,7 @@
         <header class="channel-info-section__header">
           <a class="channel-info-section__channel-btn" href="#" role="button">
             <picture>
-              <source srcset="/images/current-channel.webp">
+              <source srcset="/images/current-channel.webp" type="image/webp">
                 <img class="channel-info-section__channel-image" src="/images/current-channel.jpg" alt="Two letters, 'F' and 'T', standing next to each other.">
             </picture>
           </a>
@@ -90,7 +90,21 @@
         <p class="channel-info-section__description">Dancing cats. It's fun.</p>
       </section>
       <hr class="section-break">
-      <section class="comments-section"></section>
+      <section class="comments-section">
+        <header class="comments-section__header">
+          <p class="comments-section__comments-amount">271 Comments</p>
+          <a class="comments-section__sort-btn" href="#" title="Sort comments" role="button">
+            <p><i class="comments-section__sort-icon fas fa-sort-amount-up"></i>SORT BY</p>
+          </a>
+        </header>
+        <section class="comments-section__new-comment-section">
+          <picture>
+            <source srcset="/images/current-user.webp" type="image/webp">
+              <img class="comments-section__user-img" src="/images/current-user.jpg" alt="">
+          </picture>
+          <input class="comments-section__comment-input" type="text" placeholder="Add a public comment...">
+        </section>
+      </section>
     </main>
     <aside class="side-section">
       <section class="related-videos"></section>
