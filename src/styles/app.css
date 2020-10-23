@@ -323,12 +323,18 @@ body {
   display: flex;
   flex-direction: column;
 
-  margin: 25px 0;
+  margin: 30px 0 35px 0;
   padding-left: 45px;
 }
 
 .comment__header {
   display: flex;
+}
+
+.comment__user-profile-btn {
+  display: flex;
+
+  color: white;
 }
 
 .comment__user-img-container {
@@ -360,6 +366,8 @@ body {
 
 .comment__text {
   margin: 15px 0 3px 17px;
+
+  font-size: 17px;
 }
 
 .comment__actions-section {
