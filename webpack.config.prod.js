@@ -19,9 +19,9 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
 
-    /* name of the repo (if deploying to gh-pages)
+    /* name of the repo (if deploying to gh-pages) /repo-name/
       or '/' (if deploying to firebase) */
-    publicPath: '/'
+    publicPath: '/embedding-images-and-video-odin/'
   },
 
   devServer: {
