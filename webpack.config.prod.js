@@ -1,6 +1,13 @@
 const path = require('path')
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+const ImageminWebpPlugin = require('imagemin-webp-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+const imageminMozjpeg = require('imagemin-mozjpeg')
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
@@ -21,6 +28,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist')
   },
 
+  devtool: false,
+
   module: {
     rules: [
       {
@@ -37,6 +46,37 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: 'src/index.html' }),
     new MiniCssExtractPlugin(),
-    new OptimizeCssAssetsPlugin()
+    new OptimizeCssAssetsPlugin(),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/assets/images',
+          to: path.resolve(__dirname, 'dist/images')
+        }
+      ]
+    }),
+
+    new ImageminWebpPlugin({
+      config: [{
+        test: /\.(jpe?g|png)/,
+        options: {
+          quality: 60
+        }
+      }]
+    }),
+
+    new ImageminPlugin({
+      jpegtran: null,
+      gifsicle: null,
+      optipng: null,
+
+      plugins: [
+        imageminMozjpeg({
+          quality: 75,
+          progressive: true
+        })
+      ]
+    })
   ]
 }
