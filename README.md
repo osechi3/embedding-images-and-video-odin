@@ -7,3 +7,5 @@ This page is a part of The Odin Project Curriculum. The main goal here is to pra
 + [x] Using semantic HTML
 + [x] Using stylelint, normalize.css and reset CSS
 + [x] Optimizing images
+
+You can see it [here](https://osechi3.github.io/embedding-images-and-video-odin/).
