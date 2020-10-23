@@ -446,7 +446,7 @@ body {
   position: relative;
 
   display: flex;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .related-video__info-section {
@@ -468,6 +468,10 @@ body {
   margin-bottom: 5px;
 
   color: white;
+}
+
+.related-video__author {
+  font-style: normal;
 }
 
 .related-video__video-info {
