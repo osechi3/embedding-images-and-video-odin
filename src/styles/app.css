@@ -1,3 +1,28 @@
+/* Table of Contents */
+
+/* Variables */
+
+/*
+  * HEADER
+    ** Left Navigation Bar
+    ** Search Section
+    ** Header Right Actions Section
+*/
+
+/*
+  * Main Section
+    ** Video Section
+    ** Channel Info Section
+    ** Comments section
+      *** New Comment Section
+      *** Other Comments Section
+*/
+
+/*
+  * Side Section
+    ** Related Videos Section
+*/
+
 html {
   box-sizing: border-box;
 
@@ -23,6 +48,7 @@ body {
   --main-text-gray: #adadad;
 }
 
+/* Header */
 .header {
   position: fixed;
   z-index: 2;
@@ -122,6 +148,7 @@ body {
   border-radius: 50%;
 }
 
+/* Main Section */
 .main-section {
   display: flex;
   flex-direction: column;
@@ -133,6 +160,7 @@ body {
   outline: 1px solid;
 }
 
+/* Video Section */
 .video-section__video {
   width: 1080px;
   height: 610px;
@@ -201,6 +229,7 @@ body {
   border: none;
 }
 
+/* Channel Info Section */
 .channel-info-section {
   position: relative;
 }
@@ -268,6 +297,7 @@ body {
   margin: 15px 0 15px 80px;
 }
 
+/* Comments section */
 .comments-section__header {
   display: flex;
 }
@@ -287,6 +317,7 @@ body {
   margin-right: 10px;
 }
 
+/* New Comment Section */
 .comments-section__new-comment-section {
   display: flex;
   align-items: center;
@@ -317,6 +348,7 @@ body {
   border-bottom: 1px solid #525252;
 }
 
+/* Other Comments Section */
 .comment {
   position: relative;
 
@@ -407,6 +439,7 @@ body {
   margin-right: 15px;
 }
 
+/* Side Section */
 .side-section {
   display: flex;
   flex-direction: column;
@@ -442,6 +475,7 @@ body {
   margin-left: 10px;
 }
 
+/* Related Videos Section */
 .related-video {
   position: relative;
 
